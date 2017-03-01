@@ -1,0 +1,38 @@
+.site-footer {
+    background: $brand-warning;
+    padding-bottom: 20px;
+    .container {
+        position: relative;
+    }
+    &__logo {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate( 0, -100%);
+        @include transition;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    &__info {
+        margin-top: 30px;
+        [class*='ion-'] {
+            margin-left: 10px;
+        }
+    }
+    &__copyright {
+        display: inline-block;
+        padding-top: 5px;
+        border-top: 1px solid #fff;
+        float: right;
+        padding-left: 10px;
+    }
+    p {
+        margin: 10px 0;
+        text-align: right;
+        color: white;
+    }
+    a {
+        color: white;
+    }
+}

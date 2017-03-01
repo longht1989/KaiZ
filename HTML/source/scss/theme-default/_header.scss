@@ -1,0 +1,34 @@
+/* ===============================
+   Header's style   
+   =============================== */
+
+.site-header {
+    background-color: $brand-info;
+    padding-top: 25px;
+    .logo {
+        float: left;
+        @include transition;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    &__top-bar {
+        @include clearfix;
+    }
+    &__menu {
+        float: right;
+        li {
+            float: left;
+            margin-left: 20px;
+        }
+    }
+    &__cover {
+        padding: 20px 0;
+    }
+    a {
+        color: white;
+        &:hover {
+            color: $brand-primary;
+        }
+    }
+}
