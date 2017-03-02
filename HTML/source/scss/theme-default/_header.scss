@@ -11,19 +11,30 @@
         &:hover {
             opacity: 0.8;
         }
+        @include breakpoint(xs) {
+            max-width: 120px;
+        }
     }
     &__top-bar {
         @include clearfix;
     }
     &__menu {
         float: right;
+        @include font-size(16, 21);
         li {
             float: left;
             margin-left: 20px;
+            @include breakpoint(xs) {
+                margin-left: 15px;
+            }
         }
     }
     &__cover {
         padding: 20px 0;
+        @include clearfix;
+        @include breakpoint(xs) {
+            padding-bottom: 0;
+        }
     }
     a {
         color: white;
