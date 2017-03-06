@@ -3,17 +3,18 @@
         position: relative;
         @include breakpoint(xs) {
             padding-top: 40px;
-            margin-top: 20px;
+            margin-top: 30px;
         }
     }
     &__header {
         position: absolute;
         top: 0;
         transform: translate( 0, -100%);
-        font-size: 28px;
+        font-size: 36px;
         color: $brand-info;
         text-transform: uppercase;
         font-weight: bold;
+        border-bottom: 5px solid $brand-info;
         @include breakpoint(sm) {
             right: 10px;
         }
